@@ -1,9 +1,171 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>InkByAlex - Professional Tattoo Artist</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Helvetica Neue', sans-serif;
+      background-color: #111;
+      color: #eee;
+    }
+
+    header {
+      background: #000;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      color: #e63946;
+    }
+
+    nav {
+      text-align: center;
+      background: #222;
+      padding: 10px;
+    }
+
+    nav a {
+      margin: 0 15px;
+      color: #eee;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hero {
+      background: url('tattoo-artist-hero.jpg') no-repeat center center/cover;
+      height: 90vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+    }
+
+    .hero h2 {
+      font-size: 3em;
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .portfolio img {
+      width: 100%;
+      max-width: 300px;
+      margin: 10px;
+      border: 2px solid #e63946;
+      border-radius: 8px;
+    }
+
+    .testimonials, .services {
+      background: #1a1a1a;
+      border-radius: 10px;
+      padding: 30px;
+      margin-top: 20px;
+    }
+
+    .contact form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .contact input, .contact textarea {
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+    }
+
+    .contact button {
+      padding: 10px;
+      background: #e63946;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 1em;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #000;
+      color: #aaa;
+    }
+  </style>
+</head>
 <body>
 
-<h1>My First Heading</h1>
-<p>My first paragraph.</p>
+  <header>
+    <h1>InkByAlex</h1>
+    <p>Professional Tattoo Artist</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#services">Services</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section class="hero">
+    <h2>Express Yourself with Timeless Ink</h2>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>With over 10 years of experience in the art of tattooing, I specialize in custom designs that bring your vision to life. From intricate black and gray to vibrant full-color work, every piece is a collaboration built on trust, creativity, and skill.</p>
+  </section>
+
+  <section id="portfolio" class="portfolio">
+    <h2>Portfolio</h2>
+    <div style="display: flex; flex-wrap: wrap; justify-content: center;">
+      <img src="tattoo1.jpg" alt="Tattoo 1"/>
+      <img src="tattoo2.jpg" alt="Tattoo 2"/>
+      <img src="tattoo3.jpg" alt="Tattoo 3"/>
+    </div>
+  </section>
+
+  <section id="services" class="services">
+    <h2>Services</h2>
+    <ul>
+      <li>Custom Tattoo Design</li>
+      <li>Black & Gray Tattoos</li>
+      <li>Color Tattoos</li>
+      <li>Cover-Ups</li>
+      <li>Consultations</li>
+    </ul>
+  </section>
+
+  <section id="testimonials" class="testimonials">
+    <h2>Testimonials</h2>
+    <p>“Alex is a true artist. The detail in my tattoo is incredible and the experience was amazing.” – Jamie R.</p>
+    <p>“Very professional and clean studio. I felt comfortable the entire time.” – Marcus D.</p>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea rows="5" placeholder="Tell me about your idea..." required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 InkByAlex. All rights reserved.</p>
+  </footer>
 
 </body>
 </html>
